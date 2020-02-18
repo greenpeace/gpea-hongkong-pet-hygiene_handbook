@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Handbook
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="/main.HASH_REF_e9a50ec8e6a9799b506fde80b77c4bc0.css"></head><body>
+    <main>
+      <div class="wrapper">
+        <div class="cd-section">
+          <div class="container-fluid">
+            <div class="row my-2">
+              <div class="col-md-6 col-lg-7 col-xl-8">
+                <section class="blogs-1">
+                  <div class="container">
+                    <div class="row mb-5">
+                      <div class="col-md-8">
+                        <h3 class="display-3">Our recent writings</h3>
+                        <p class="lead mt-1">
+                          The time is now for it to be okay to be great. People
+                          in this world shun people for being great.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  New Challenges
+                                </h6>
+                                <h5 class="card-title">Touch on a trend</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  New Opportunities
+                                </h6>
+                                <h5 class="card-title">Constantly growing</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Sales Leads
+                                </h6>
+                                <h5 class="card-title">
+                                  Configure Blockchain Technology
+                                </h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-lg-6">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  AI at the Edge
+                                </h6>
+                                <h5 class="card-title">Research Byte</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Spectrum
+                                </h6>
+                                <h5 class="card-title">Data Virtualization</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Touch on a trend
+                                </h6>
+                                <h5 class="card-title">New Challenges</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-md-6 col-lg-5 col-xl-4">
+                <div class="enform-wrapper">
+                  <form action=""></form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="/jquery.min.HASH_REF_4bde4ae611de991ac60891ec0a06338a.js" type="text/javascript"></script>
+    <script src="/popper.min.HASH_REF_adee47fcbf07f9a1c79cd977fc4bcdad.js" type="text/javascript"></script>
+    <script src="/bootstrap.min.HASH_REF_9ebcdd37362ed9cf332e908bf5ce9b13.js" type="text/javascript"></script>
+    <script src="/perfect-scrollbar.jquery.min.HASH_REF_885d8f02860637a32185da2ea0770747.js"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="/bootstrap-switch.HASH_REF_80d1f1f1762f413b24aa75e965256e33.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="/nouislider.min.HASH_REF_019604cafef11606581f653cf2c6a0fb.js" type="text/javascript"></script>
+    <!--  Plugin for the Carousel, full documentation here: http://jedrzejchalubek.com/ -->
+    <script src="/glide.HASH_REF_b8f6595cf50adc130b037780a5583d6d.js" type="text/javascript"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://flatpickr.js.org/ -->
+    <script src="/moment.min.HASH_REF_3c379854606f168fade72d62863b7ccc.js"></script>
+    <!--	Plugin for Select, full documentation here: https://joshuajohnson.co.uk/Choices/ -->
+    <script src="/choices.min.HASH_REF_5e75aa0a87ad0c3a8d639300f3afebe6.js" type="text/javascript"></script>
+    <!--  Plugin for the DateTimePicker, full documentation here: https://flatpickr.js.org/ -->
+    <script src="/datetimepicker.HASH_REF_a38276cb18899a843a185f346f26d484.js" type="text/javascript"></script>
+    <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+    <script src="/jasny-bootstrap.min.HASH_REF_97610c6bdab0fc016d79de09658fda4b.js"></script>
+    <!-- Plugin for Headrom, full documentation here: https://wicky.nillia.ms/headroom.js/ -->
+    <script src="/headroom.min.HASH_REF_bcdd0a44c9d023e166ea3e463fa88b6a.js"></script>
+    <script src="/main.HASH_REF_615b089a4a7b0d6a34b28fbf7bf163db.js"></script>
+  </body>
+</html>

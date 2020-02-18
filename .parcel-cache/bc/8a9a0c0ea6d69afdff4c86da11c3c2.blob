@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Handbook
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="c1355a7439ab67942fa7d24c799b6b58" rel="stylesheet">
+  <link href="9e102af56a48d7fe9f87775a6d096b0c" rel="stylesheet">
+  </head><body>
+    <main>
+      <div class="wrapper">
+        <div class="cd-section">
+          <div class="container-fluid">
+            <div class="row my-2">
+              <div class="col-md-6 col-lg-7 col-xl-8">
+                <section class="blogs-1">
+                  <div class="container">
+                    <div class="row mb-5">
+                      <div class="col-md-8">
+                        <h3 class="display-3">Our recent writings</h3>
+                        <p class="lead mt-1">
+                          The time is now for it to be okay to be great. People
+                          in this world shun people for being great.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  New Challenges
+                                </h6>
+                                <h5 class="card-title">Touch on a trend</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  New Opportunities
+                                </h6>
+                                <h5 class="card-title">Constantly growing</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Sales Leads
+                                </h6>
+                                <h5 class="card-title">
+                                  Configure Blockchain Technology
+                                </h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-lg-6">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  AI at the Edge
+                                </h6>
+                                <h5 class="card-title">Research Byte</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Spectrum
+                                </h6>
+                                <h5 class="card-title">Data Virtualization</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Touch on a trend
+                                </h6>
+                                <h5 class="card-title">New Challenges</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-md-6 col-lg-5 col-xl-4">
+                <div class="enform-wrapper">
+                  <form action=""></form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="29496d0a9974dd4137dd0f7dd37e7cb0" type="text/javascript"></script>
+    <script src="27268e55d7b9635203612aa880f05c26" type="text/javascript"></script>
+    <script src="030ebdef2b328146a2c38bca3b03ad58" type="text/javascript"></script>
+    <script src="5bfe98d86b7e29e7361fd1269e97cdf1"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="42ed6b0f43f7678ccf0ef560877e52c1"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="a2ea9abc2171c29b266cd1a32cf5870f" type="text/javascript"></script>
+    <!--  Plugin for the Carousel, full documentation here: http://jedrzejchalubek.com/ -->
+    <script src="35c16df90451616cfa33dab61158e411" type="text/javascript"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://flatpickr.js.org/ -->
+    <script src="2b168a8b59c5e4f28a943784c7f76af3"></script>
+    <!--	Plugin for Select, full documentation here: https://joshuajohnson.co.uk/Choices/ -->
+    <script src="b153e64172eb15f5351a69144568a27b" type="text/javascript"></script>
+    <!--  Plugin for the DateTimePicker, full documentation here: https://flatpickr.js.org/ -->
+    <script src="cb79c742eb3f8e3b0043e558e123ca84" type="text/javascript"></script>
+    <!-- Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput -->
+    <script src="b23d21aad211a5b48eabedf57ac38812"></script>
+    <!-- Plugin for Headrom, full documentation here: https://wicky.nillia.ms/headroom.js/ -->
+    <script src="ea9624a3c5b8babf4a70f9c15e2e7b04"></script>
+    <script src="b7842723373f70e9dd9ea11a668cb9f9"></script>
+  </body>
+</html>

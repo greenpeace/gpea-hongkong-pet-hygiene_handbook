@@ -1,0 +1,4 @@
+@import "./assets/css/font-awesome.css";
+@import "./assets/css//nucleo-icons.css";
+@import "./assets/css/nucleo-svg.css";
+@import "./assets/css/argon-design-system.min.css";

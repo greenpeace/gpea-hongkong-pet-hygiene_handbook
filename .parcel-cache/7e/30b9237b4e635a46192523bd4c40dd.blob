@@ -1,0 +1,17 @@
+"use strict";
+
+require("./main.scss");
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+(0, _jquery.default)(function () {
+  (0, _jquery.default)(".en__field--text").addClass("form-group"); //
+
+  (0, _jquery.default)(".en__field--email-ok-hongkong").addClass("custom-control");
+  (0, _jquery.default)(".en__field--email-ok-hongkong").addClass("custom-checkbox");
+  (0, _jquery.default)("label.en__field__label").addClass("custom-control-label");
+  (0, _jquery.default)('input[name="supporter.questions.7275"').addClass("custom-control-input");
+});

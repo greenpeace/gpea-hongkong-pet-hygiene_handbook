@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Handbook
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="9e102af56a48d7fe9f87775a6d096b0c" rel="stylesheet">
+  </head><body>
+    <main>
+      <div class="wrapper">
+        <div class="cd-section">
+          <div class="page-header">
+            <div class="page-header-image" style="background-image: url('./assets/img/ill/p2.svg')"></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-7 mr-auto text-left d-flex justify-content-center flex-column">
+                  <h3 class="display-3">Argon Design System</h3>
+                  <p class="lead mt-0">The time is now for it to be okay to be great. People in this world shun people for being great. For being a bright color. </p>
+                  <br>
+                  <div class="buttons">
+                    <a href="javascript:;" class="btn btn-danger">
+                      Got it
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cd-section">
+          <div class="container-fluid">
+            <div class="row my-2">
+              <div class="col-md-6 col-lg-7 col-xl-8">
+                <section class="blogs-1">
+                  <div class="container">
+                    <div class="row mb-5">
+                      <div class="col-md-8">
+                        <h3 class="display-3">Our recent writings</h3>
+                        <p class="lead mt-1">
+                          The time is now for it to be okay to be great. People
+                          in this world shun people for being great.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  New Challenges
+                                </h6>
+                                <h5 class="card-title">Touch on a trend</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  New Opportunities
+                                </h6>
+                                <h5 class="card-title">Constantly growing</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Sales Leads
+                                </h6>
+                                <h5 class="card-title">
+                                  Configure Blockchain Technology
+                                </h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row align-items-center">
+                      <div class="col-lg-6">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  AI at the Edge
+                                </h6>
+                                <h5 class="card-title">Research Byte</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Spectrum
+                                </h6>
+                                <h5 class="card-title">Data Virtualization</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="card card-blog card-background" data-animation="zooming">
+                          <div class="full-background"></div>
+                          <a href="javascript:;">
+                            <div class="card-body">
+                              <div class="content-bottom">
+                                <h6 class="card-category text-white opacity-8">
+                                  Touch on a trend
+                                </h6>
+                                <h5 class="card-title">New Challenges</h5>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="col-md-6 col-lg-5 col-xl-4">
+                <div class="enform-wrapper">
+                  <form method="post" action="/page/56266/petition/2" class="en__component en__component--page">
+                    <input type="hidden" name="hidden" class="en__hiddenFields" value="">
+                    <input type="hidden" name="sessionId" value="e47829c0164d425bb1df656f906cb03a-server10008">
+                    <input type="hidden" name="gatewaykey" value="">
+                    <input type="hidden" name="gatewayaccountid" value="">
+                    <input type="hidden" name="gatewaymode" value="">
+
+
+                    <ul class="en__errorList">
+                    </ul>
+
+                    <div class="en__component en__component--row en__component--row--1">
+                      <div class="en__component en__component en__component--column">
+                        <div class="en__component en__component--formblock" style="">
+
+
+                          <div class="en__field en__field--text en__field--612192 en__field--emailAddress en__mandatory">
+                            <label for="en__field_supporter_emailAddress" class="en__field__label" style="">電郵地址</label>
+                            <div class="en__field__element en__field__element--text">
+                              <input id="en__field_supporter_emailAddress" type="text" class="en__field__input en__field__input--text" name="supporter.emailAddress" value="">
+                            </div>
+                          </div>
+                          <div class="en__field en__field--text en__field--612193 en__field--lastName">
+                            <label for="en__field_supporter_lastName" class="en__field__label" style="">姓氏</label>
+                            <div class="en__field__element en__field__element--text">
+                              <input id="en__field_supporter_lastName" type="text" class="en__field__input en__field__input--text" name="supporter.lastName" value="">
+                            </div>
+                          </div>
+                          <div class="en__field en__field--text en__field--612194 en__field--firstName">
+                            <label for="en__field_supporter_firstName" class="en__field__label" style="">名字</label>
+                            <div class="en__field__element en__field__element--text">
+                              <input id="en__field_supporter_firstName" type="text" class="en__field__input en__field__input--text" name="supporter.firstName" value="">
+                            </div>
+                          </div>
+                          <div class="en__field en__field--checkbox en__field--question en__field--7275 en__field--email-ok-hongkong">
+                            <label class="en__field__label" style="">email_ok_hongkong</label>
+                            <div class="en__field__element en__field__element--checkbox
+                  	">
+                              <div class="en__field__item">
+                                <input id="en__field_supporter_questions_7275" checked="" type="checkbox" class="en__field__input en__field__input--checkbox" value="Y" name="supporter.questions.7275">
+                                <label for="en__field_supporter_questions_7275" class="en__field__label en__field__label--item">我願意收到綠色和平發送的通訊！我並同意綠色和平按照其私隱政策與個人資料收集聲明與我保持聯絡。</label>
+                              </div>
+                            </div>
+                          </div>
+                          <input type="hidden" class="en__field__input en__field__input--hidden" name="supporter.NOT_TAGGED_46" value="HK">
+
+                          <input type="hidden" class="en__field__input en__field__input--hidden" name="supporter.NOT_TAGGED_9" value="zh">
+
+
+                          <div class="en__submit"><button style="">立即聯署</button></div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="b7842723373f70e9dd9ea11a668cb9f9"></script>
+  </body>
+</html>

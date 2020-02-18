@@ -1,0 +1,11 @@
+"use strict";
+
+require("./main.scss");
+
+require("jquery");
+
+$(function () {
+  console.log($(".en__field--text"));
+  $(".en__field--text").addClass("form-group");
+  $('input[name="supporter.emailAddress"]').addClass("input");
+});

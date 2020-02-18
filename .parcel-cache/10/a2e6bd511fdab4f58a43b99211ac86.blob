@@ -1,0 +1,170 @@
+<html>
+  <head>
+    <!--
+    <link rel="stylesheet" href="./style.scss" />
+    -->
+  <link rel="stylesheet" href="/main.HASH_REF_e9a50ec8e6a9799b506fde80b77c4bc0.css"></head>
+  <body>
+    <main>
+      <h1>Hello World</h1>
+      <div class="wrapper">
+        <div class="page-header bg-default">
+          <div class="page-header-image" style="background-image: url('');"></div>
+          <div class="container" id="container">
+            <div class="form-container sign-up-container">
+              <form action="javascript:;">
+                <h2>Create Account</h2>
+                <div class="social-container">
+                  <button type="button" class="btn btn-facebook btn-sm">
+                    <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
+                  </button>
+                  <button type="button" class="btn-instagram btn btn-sm">
+                    <span class="btn-inner--icon"><i class="fab fa-instagram"></i></span>
+                  </button>
+                  <button type="button" class="btn btn-twitter btn-sm">
+                    <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
+                  </button>
+                </div>
+                <span class="text-default mb-4">or use your email for registration</span>
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-circle-08"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Name" type="text">
+                  </div>
+                </div>
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Email" type="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <button class="btn btn-primary">Sign Up</button>
+              </form>
+            </div>
+            <div class="form-container sign-in-container">
+              <form action="#" role="form">
+                <h2>Sign in</h2>
+                <div class="social-container">
+                  <button type="button" class="btn btn-facebook btn-sm">
+                    <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
+                  </button>
+                  <button type="button" class="btn-instagram btn btn-sm">
+                    <span class="btn-inner--icon"><i class="fab fa-instagram"></i></span>
+                  </button>
+                  <button type="button" class="btn btn-twitter btn-sm">
+                    <span class="btn-inner--icon"><i class="fab fa-twitter"></i></span>
+                  </button>
+                </div>
+                <span class="text-default mb-4">or use your account</span>
+                <div class="form-group mb-3">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Email" type="email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="input-group input-group-alternative">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
+                    </div>
+                    <input class="form-control" placeholder="Password" type="password">
+                  </div>
+                </div>
+                <a href="javascript:;">Forgot your password?</a>
+                <button class="btn btn-primary mt-3">Sign In</button>
+              </form>
+            </div>
+            <div class="overlay-container">
+              <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                  <h1 class="text-white">Welcome Back!</h1>
+                  <p>
+                    To keep connected with us please login with your personal
+                    info
+                  </p>
+                  <button class="btn btn-neutral btn-sm" id="signIn">
+                    Sign In
+                  </button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                  <h1 class="text-white">Hello, Friend!</h1>
+                  <p>Enter your personal details and start journey with us</p>
+                  <button class="btn btn-neutral btn-sm" id="signUp">
+                    Sign Up
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="footer">
+          <div class="container">
+            <div class="row row-grid align-items-center mb-5">
+              <div class="col-lg-6">
+                <h3 class="text-primary font-weight-light mb-2">
+                  Thank you for supporting us!
+                </h3>
+                <h4 class="mb-0 font-weight-light">
+                  Let's get in touch on any of these platforms.
+                </h4>
+              </div>
+              <div class="col-lg-6 text-lg-center btn-wrapper">
+                <button target="_blank" href="https://twitter.com/creativetim" class="btn btn-icon-only btn-twitter rounded-circle" data-toggle="tooltip" data-original-title="Follow us">
+                  <span class="btn-inner--icon"><i class="fa fa-twitter"></i></span>
+                </button>
+                <button target="_blank" href="https://www.facebook.com/CreativeTim/" class="btn-icon-only rounded-circle btn btn-facebook" data-toggle="tooltip" data-original-title="Like us">
+                  <span class="btn-inner--icon"><i class="fab fa-facebook"></i></span>
+                </button>
+                <button target="_blank" href="https://dribbble.com/creativetim" class="btn btn-icon-only btn-dribbble rounded-circle" data-toggle="tooltip" data-original-title="Follow us">
+                  <span class="btn-inner--icon"><i class="fa fa-dribbble"></i></span>
+                </button>
+                <button target="_blank" href="https://github.com/creativetimofficial" class="btn btn-icon-only btn-github rounded-circle" data-toggle="tooltip" data-original-title="Star on Github">
+                  <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
+                </button>
+              </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-md-between">
+              <div class="col-md-6">
+                <div class="copyright">
+                  &copy; 2019 <a href="" target="_blank">Creative Tim</a>.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <ul class="nav nav-footer justify-content-end">
+                  <li class="nav-item">
+                    <a href="" class="nav-link" target="_blank">Creative Tim</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link" target="_blank">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="https://blog.creative-tim.com/" class="nav-link" target="_blank">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link" target="_blank">License</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+    <script src="/main.HASH_REF_615b089a4a7b0d6a34b28fbf7bf163db.js"></script>
+  </body>
+</html>

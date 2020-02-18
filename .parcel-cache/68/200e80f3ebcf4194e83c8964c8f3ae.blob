@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Handbook
+  </title>
+  <!--     Fonts and icons     -->
+  <link href="9e102af56a48d7fe9f87775a6d096b0c" rel="stylesheet">
+  </head><body>
+    <main>
+    <div class="wrapper">
+      <div class="page-header bg-default">
+        <div class="page-header-image" style="background-image: url('https://change.greenpeace.org.hk/vendor/argon-design/assets/img/ill/reset.svg'); z-index: 0;"></div>
+        <div class="container">
+          <div class="col-lg-5 col-md-8 mx-auto">
+            <div class="card bg-secondary shadow border-0">
+              <div class="card-header">
+                <img class="card-img" src="f33a8d0d5255ac510f69fbae5371c70a" alt="Card image">
+                <h4 class="card-title text-center">Reset Password</h4>
+              </div>
+              <div class="card-body px-lg-5 py-lg-5">
+                <div class="text-center text-muted mb-4">
+                  <small>Enter email address to reset password</small>
+                </div>
+                <form role="form">
+                  <div class="form-group mb-3">
+                    <div class="input-group input-group-alternative">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                      </div>
+                      <input class="form-control" placeholder="Email" type="email">
+                    </div>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="btn btn-primary my-4">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    <script src="b7842723373f70e9dd9ea11a668cb9f9"></script>
+  </body>
+</html>
