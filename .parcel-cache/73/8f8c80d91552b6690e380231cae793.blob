@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>
+    Handbook
+  </title>
+  <link href="9e102af56a48d7fe9f87775a6d096b0c" rel="stylesheet">
+  <!--
+  <link href="https://change.greenpeace.org.hk/vendor/argon-design/assets/css/argon-design-system.min.css" rel="stylesheet">
+  -->
+  <link href="abc4faeb02a68dfb5a76b0cca1cffa71" rel="stylesheet">
+  </head><body>
+    <main>
+      <header class="header">
+        <img class="gp-logo" src="14aa2a025c857bff16906171418bba90" alt="Greenpeace 綠色和平">
+      </header>
+        <div class="wrapper">
+            <div class="bg-image"></div>
+            <div class="container">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <div class="card shadow">
+                  <div class="card-header">
+                    <img class="card-img" src="1c75462201a3afd9d25e566b5873b577" alt="《綠色抗肺炎－防疫手冊》">
+                  </div>
+                  <div class="card-body px-lg-5 py-lg-5">
+                    <div class="text-center mb-4">
+                      <h1>《綠色抗肺炎－防疫手冊》</></h1>
+                      <small>Enter email address to get the handbook</small>
+                    </div>
+                    <div class="form__wrapper">
+                    <form role="form">
+                      <div class="form-group mb-3">
+                        <div class="input-group input-group-alternative">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                          </div>
+                          <input class="form-control" id="email" placeholder="電郵地址 Email Address" type="email">
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <button type="button" class="btn--download btn my-4">Send me the handbook</button>
+                      </div>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <footer class="footer">
+            <div class="container">
+              <div class="row row-grid align-items-center mb-4">
+                <div class="col-lg-6">
+                  <img class="gp-logo" src="e28c971d750a63f2366d32f69aa58119" alt="Greenpeace 綠色和平">
+                  <p>
+                  綠色和平是獨立的國際環保組織，通過科學研究、政策倡議及和平行動，揭露全球環境問題並提出相應解決方案。我們從不接受任何政府、企業或政治團體的資助，只接受個人的直接捐款，以維持公正獨立。
+                </p>
+                </div>
+                <div class="col-lg-6 text-lg-center">
+                  <div class="footer__link"><ul class="links"><a target="_blank" rel="noopener noreferrer" href="8de31f3b85f6dc967e1f0eb1a7995556" alt="主頁">主頁</a><a target="_blank" rel="noopener noreferrer" href="3889653fd0e2710e4e9b3d3fddc9f162" alt="私隱政策與個人資料收集聲明">私隱政策與個人資料收集聲明</a><a target="_blank" rel="noopener noreferrer" href="c6a2eb9f99f86719bfcefaff4f86e17d" alt="聯絡我們">聯絡我們</a><a target="_blank" rel="noopener noreferrer" href="7607588706f7fff9f15eec88a5bbe6a4" alt="關於綠色和平">關於綠色和平</a></ul></div>
+                </div>
+              </div>
+              <hr>
+              <div class="row align-items-center justify-content-md-between">
+                <div class="col-12">
+                  <div class="copyright">
+                    © GREENPEACE 2020
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+    </main>
+    <div class="enform__wrapper">
+<form method="post" action="/page/56266/petition/2" class="en__component en__component--page">
+  <ul class="en__errorList">
+  </ul>
+
+  <div class="en__component en__component--row en__component--row--1">
+    <div class="en__component en__component en__component--column">
+      <div class="en__component en__component--formblock" style="">
+
+
+        <div class="en__field en__field--text en__field--612192 en__field--emailAddress en__mandatory">
+          <label for="en__field_supporter_emailAddress" class="en__field__label" style="">電郵地址</label>
+          <div class="en__field__element en__field__element--text">
+            <input id="en__field_supporter_emailAddress" type="text" class="en__field__input en__field__input--text" name="supporter.emailAddress" value="">
+          </div>
+        </div>
+        <div class="en__field en__field--text en__field--612193 en__field--lastName">
+          <label for="en__field_supporter_lastName" class="en__field__label" style="">姓氏</label>
+          <div class="en__field__element en__field__element--text">
+            <input id="en__field_supporter_lastName" type="text" class="en__field__input en__field__input--text" name="supporter.lastName" value="">
+          </div>
+        </div>
+        <div class="en__field en__field--text en__field--612194 en__field--firstName">
+          <label for="en__field_supporter_firstName" class="en__field__label" style="">名字</label>
+          <div class="en__field__element en__field__element--text">
+            <input id="en__field_supporter_firstName" type="text" class="en__field__input en__field__input--text" name="supporter.firstName" value="">
+          </div>
+        </div>
+        <div class="en__field en__field--checkbox en__field--question en__field--7275 en__field--email-ok-hongkong">
+          <label class="en__field__label">email_ok_hongkong</label>
+          <div class="en__field__element en__field__element--checkbox
+	">
+            <div class="en__field__item">
+              <input id="en__field_supporter_questions_7275" checked="" type="checkbox" class="en__field__input en__field__input--checkbox" value="Y" name="supporter.questions.7275">
+              <label for="en__field_supporter_questions_7275" class="en__field__label en__field__label--item">我願意收到綠色和平發送的通訊！我並同意綠色和平按照其私隱政策與個人資料收集聲明與我保持聯絡。</label>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" class="en__field__input en__field__input--hidden" name="supporter.NOT_TAGGED_46" value="HK">
+
+        <input type="hidden" class="en__field__input en__field__input--hidden" name="supporter.NOT_TAGGED_9" value="zh">
+
+
+        <div class="en__submit"><button style="">立即聯署</button></div>
+      </div>
+    </div>
+  </div>
+</form>
+                    </div>
+    <script src="b7842723373f70e9dd9ea11a668cb9f9"></script>
+  </body>
+</html>

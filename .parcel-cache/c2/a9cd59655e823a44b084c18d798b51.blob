@@ -1,0 +1,11 @@
+@import "./assets/css/font-awesome.css";
+@import "./assets/css/nucleo-icons.css";
+@import "./assets/css/nucleo-svg.css";
+@import "./assets/css/argon-design-system.css";
+.enform__wrapper {
+  display: none;
+}
+
+.page-header-image {
+  background-color: #ddd;
+}

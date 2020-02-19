@@ -1,0 +1,7 @@
+.enform__wrapper {
+  display: none;
+}
+
+.page-header-image {
+  background-color: #ddd;
+}

@@ -1,0 +1,39 @@
+"use strict";
+
+require("sanitize.css/sanitize.css");
+
+require("./main.scss");
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+var _validate = _interopRequireDefault(require("validate.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import "flexboxgrid/css/flexboxgrid.min.css";
+//
+//
+(0, _jquery.default)(function () {
+  (0, _jquery.default)(".btn--download").on("click", function () {
+    const constraints = {
+      email: {
+        presence: true,
+        email: true
+      }
+    };
+    const errors = (0, _validate.default)({
+      email: document.querySelector("#email").value
+    }, constraints);
+    console.log(errors);
+
+    if (errors) {
+      (0, _jquery.default)(".form-group--email").addClass("has-danger");
+    } else {
+      (0, _jquery.default)(".form-group--email").removeClass("has-danger"); //
+
+      (0, _jquery.default)('input[name="supporter.emailAddress"').value = document.querySelector("#email").value;
+    }
+  });
+
+  const enFormSubmit = function () {};
+});

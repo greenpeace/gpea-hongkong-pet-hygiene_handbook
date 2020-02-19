@@ -1,0 +1,53 @@
+"use strict";
+
+require("sanitize.css/sanitize.css");
+
+require("./main.scss");
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+var _mailcheck = _interopRequireDefault(require("mailcheck"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import "flexboxgrid/css/flexboxgrid.min.css";
+//
+//
+(0, _jquery.default)(function () {
+  let domains = ["me.com", "outlook.com", "netvigator.com", "cloud.com", "live.hk", "msn.com", "gmail.com", "hotmail.com", "ymail.com", "yahoo.com", "yahoo.com.tw", "yahoo.com.hk"];
+  let topLevelDomains = ["com", "net", "org", "edu"];
+
+  var superStringDistance = function (string1, string2) {// a string distance algorithm of your choosing
+  };
+
+  const email = document.querySelector("#email");
+  email.addEventListener("blur", e => {
+    _mailcheck.default.run({
+      email: email.value,
+      domains: domains,
+      // optional
+      topLevelDomains: topLevelDomains,
+      // optional
+      distanceFunction: superStringDistance,
+      // optional
+      suggested: function (element, suggestion) {
+        // callback code
+        console.log(suggestion);
+
+        if (!suggestion) {
+          (0, _jquery.default)(".button-download").prop("disabled", false);
+        }
+      },
+      empty: function (element) {
+        // callback code
+        console.log("email is empty");
+        console.log(email.value);
+        (0, _jquery.default)(".button-download").prop("disabled", true);
+      }
+    });
+  }); // mailcheck
+
+  (0, _jquery.default)(".button--download").on("click", function () {
+    console.log("click");
+  });
+});

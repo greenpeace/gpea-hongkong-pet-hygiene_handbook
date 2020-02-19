@@ -12,9 +12,9 @@
     "sass": "^1.25.0"
   },
   "dependencies": {
-    "bootstrap": "^4.4.1",
-    "flexboxgrid": "^6.3.1",
     "jquery": "^3.4.1",
-    "perfect-scrollbar": "^1.5.0"
+    "mailcheck": "^1.1.1",
+    "sanitize.css": "^11.0.0",
+    "validate.js": "^0.13.1"
   }
 }
