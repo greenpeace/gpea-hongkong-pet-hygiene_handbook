@@ -1,0 +1,79 @@
+"use strict";
+
+require("sanitize.css/sanitize.css");
+
+require("./main.scss");
+
+var _jquery = _interopRequireDefault(require("jquery"));
+
+var _mailcheck = _interopRequireDefault(require("mailcheck"));
+
+var yup = _interopRequireWildcard(require("yup"));
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//
+(0, _jquery.default)(function () {
+  const email = document.querySelector("#email");
+  const emailMessage = document.querySelector(".input-group-message");
+  const emailField = document.querySelector(".form-group--email");
+  const btnDownload = document.querySelector(".btn--download"); //
+
+  let domains = ["me.com", "outlook.com", "netvigator.com", "cloud.com", "live.hk", "msn.com", "gmail.com", "hotmail.com", "ymail.com", "yahoo.com", "yahoo.com.tw", "yahoo.com.hk"];
+  email.addEventListener("blur", function () {
+    emailMessage.innerText = "";
+
+    if (email.value === "") {} else {
+      _mailcheck.default.run({
+        email: email.value,
+        domains: domains,
+        // optional
+        suggested: function (suggestion) {
+          // callback code
+          emailMessage.innerHTML = `您要輸入的是 <span class="email-suggestion">${suggestion.full}</span> 嗎？`;
+        },
+        empty: function () {
+          // callback code
+          emailMessage.innerHTML = `電郵地址格式錯誤`;
+        }
+      });
+    }
+  });
+  emailMessage.addEventListener("click", function () {
+    const emailSuggestion = document.querySelector(".email-suggestion").innerText;
+
+    if (emailSuggestion) {
+      email.value = emailSuggestion.innerText;
+      emailMessage.innerHTML = "";
+    }
+  });
+  const validationSchema = yup.object({
+    email: yup.string().email()
+  });
+
+  const customFormHandle = function () {
+    validationSchema.isValid({
+      email: email.value
+    }).then(function (valid) {
+      valid;
+      console.log(valid);
+    });
+
+    if (email.value.yup.string().email()) {
+      document.querySelector('input[name="supporter.emailAddress"]').value = email.value;
+    }
+  };
+
+  btnDownload.addEventListener("click", function (event) {
+    event.preventDefault;
+    customFormHandle();
+  }); //
+
+  const enFormSubmit = function () {
+    (0, _jquery.default)(".enform__wrapper form").submit();
+  };
+});

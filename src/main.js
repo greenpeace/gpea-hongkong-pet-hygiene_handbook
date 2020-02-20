@@ -1,10 +1,8 @@
 import "sanitize.css/sanitize.css";
-// import "flexboxgrid/css/flexboxgrid.min.css";
 import "./main.scss";
-//
 import $ from "jquery";
 import Mailcheck from "mailcheck";
-import validate from "validate.js";
+import * as yup from "yup";
 //
 $(function() {
   const email = document.querySelector("#email");
@@ -39,24 +37,37 @@ $(function() {
         },
         empty: function() {
           // callback code
-          console.log("empty");
         }
       });
     }
   });
-  const resetEmailMessage = function() {
-    emailMessage.innerHTML = "";
-  };
   emailMessage.addEventListener("click", function() {
-    email.value = document.querySelector(".email-suggestion").innerText;
-    resetEmailMessage();
+    const emailSuggestion = document.querySelector(".email-suggestion")
+      .innerText;
+    if (emailSuggestion) {
+      email.value = emailSuggestion.innerText;
+      emailMessage.innerHTML = "";
+    }
   });
+  const validationSchema = yup.object({
+    email: yup.string().email()
+  });
+  const customFormHandle = function() {
+    let isValid = false;
+    validationSchema.isValid({ email: email.value }).then(function(valid) {
+      if (valid) {
+        document.querySelector('input[name="supporter.emailAddress"]').value =
+          email.value;
+        // enFormSubmit();
+        console.log("submit");
+      }
+    });
+  };
   btnDownload.addEventListener("click", function(event) {
     event.preventDefault;
-    document.querySelector('input[name="supporter.emailAddress"]').value =
-      email.value;
-    console.log("click");
+    customFormHandle();
   });
+  //
   const enFormSubmit = function() {
     $(".enform__wrapper form").submit();
   };

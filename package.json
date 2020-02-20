@@ -12,9 +12,24 @@
     "sass": "^1.25.0"
   },
   "dependencies": {
+    "autoprefixer": "^9.7.4",
     "jquery": "^3.4.1",
     "mailcheck": "^1.1.1",
     "sanitize.css": "^11.0.0",
-    "validate.js": "^0.13.1"
+    "yup": "^0.28.1"
+  },
+  "postcss": {
+    "modules": false,
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
+        "flexbox": "no-2009"
+      }
+    }
   }
 }
