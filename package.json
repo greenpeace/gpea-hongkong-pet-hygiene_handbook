@@ -4,10 +4,9 @@
   "author": "Chris Chan <eahk@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "build": "parcel build ./src/index.html",
+    "build": "parcel build ./src/index.html --out-dir build/ --public-url https://api.greenpeace.org.hk/2020/hygiene_handbook/",
     "serve": "parcel serve ./src/index.html"
   },
-  "default": "dist/index.html",
   "devDependencies": {
     "parcel": "latest",
     "sass": "^1.25.0"

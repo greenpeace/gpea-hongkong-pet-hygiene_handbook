@@ -1,0 +1,543 @@
+/* form base */
+.enform {
+  .mailcheck-message {
+    font-size: 0.8rem;
+    color: #f66;
+    .suggestion {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  .reminderMessage {
+    margin-top: 3px;
+    color: #f66;
+    padding-left: 1rem;
+    font-size: 0.5rem;
+  }
+}
+
+/* form status */
+
+.enform {
+  &__close {
+    opacity: 0;
+    transition: all 0.28s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.enform {
+  &.form--active {
+    .enform__close {
+      opacity: 1;
+    }
+    .enform__header {
+      height: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .enform__footer {
+      display: none;
+    }
+  }
+}
+
+// ==========================================================================
+// FORM
+// ==========================================================================
+.enform {
+  margin-left: auto;
+  margin-right: auto;
+  .enform-container {
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+  }
+  .enform-container--sticky {
+    position: relative;
+    @supports (position: sticky) {
+      position: sticky;
+      top: 1vh;
+    }
+  }
+}
+
+/* form status */
+
+.enform.enform--collapsed {
+  .enform__login {
+    display: none;
+  }
+  .enform-container {
+    transition: all 0.4s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    .en__field:nth-child(n + 2):not(.en__field--email-ok-hongkong) {
+      height: 0;
+      opacity: 0;
+      margin: 0;
+      visibility: hidden;
+    }
+    .en__field--email-ok-hongkong {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+    .en__submit {
+      padding-bottom: 0px;
+    }
+  }
+  &.form--active {
+    .enform__login {
+      display: block;
+    }
+    .en__submit {
+      padding-bottom: 60px;
+    }
+    .en__field--email-ok-hongkong {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+    .en__field:nth-child(n + 2):not(.en__field--email-ok-hongkong) {
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+      margin-bottom: 16px;
+      transition: height 0.28s cubic-bezier(0.19, 1, 0.22, 1),
+        opacity 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+      transform-origin: center top;
+    }
+    .en__field:nth-of-type(2) {
+      transition-delay: 0.2s !important;
+    }
+    .en__field:nth-of-type(3) {
+      transition-delay: 0.4s !important;
+    }
+    .en__field:nth-of-type(4) {
+      transition-delay: 0.6s !important;
+    }
+  }
+}
+
+/* end of form status */
+
+/* form field styles */
+
+.enform {
+  .en__component--formblock {
+    position: relative;
+  }
+  input,
+  textarea,
+  select,
+  label,
+  button {
+    font-family: "Noto Sans TC", Microsoft YaHei, Microsoft JhengHei,
+      PingFang TC, Heiti TC, Helvetica, Arial, sans-serif;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-weight: normal;
+  }
+  input,
+  select,
+  textarea {
+    height: 34px;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+  input,
+  textarea,
+  select,
+  label {
+    font-weight: normal;
+  }
+  ::-webkit-input-placeholder {
+    color: #ddd;
+  }
+  :-moz-placeholder,
+  ::-moz-placeholder {
+    color: #ddd;
+  }
+  :-ms-input-placeholder {
+    color: #ddd;
+  }
+}
+
+.en__field__element--text,
+.en__field__element--email,
+.en__field__element--number,
+.en__field__element--telephone,
+.en__field__element--textarea,
+.en__field__element--select,
+.en__field__element--splitselect,
+.en__field__element--splittext,
+.en__field__element--tripletext,
+.en__field__element--tripleselect,
+.en__field__element--checkbox,
+.en__field__element--radio,
+.en__field__element--password,
+.en__field__element--calendar {
+  width: 100% !important;
+}
+
+.en__field__input--text,
+.en__field__input--email,
+.en__field__input--number,
+.en__field__input--telephone,
+.en__field__input--textarea,
+.en__field__input--password,
+.en__field__input--calendar {
+  width: 100% !important;
+}
+
+.en__component--column {
+  min-width: 0 !important;
+}
+
+.enform {
+  .en__field--text,
+  .en__field--select:not(.en__field--email-ok-hongkong) {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 16px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    .en__field__label {
+      font-size: 0.8rem;
+      color: #fff;
+    }
+    input,
+    textarea,
+    select {
+      height: 38px;
+      font-size: 16px !important;
+      padding: 0 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+  }
+  .en__field__input--select {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNyAxMGw1IDUgNS01eiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);
+    background-repeat: no-repeat;
+    background-size: 24px auto;
+    background-position: calc(100% - 5px) 50%;
+    option:first-of-type {
+      color: #ddd;
+    }
+    option:not(:first-of-type) {
+      color: #6d6d6d;
+    }
+  }
+}
+
+.enform {
+  .en__submit {
+    margin-top: 20px;
+    padding-bottom: 60px;
+    button {
+      letter-spacing: 4px;
+      font-size: 20px;
+      width: 100%;
+      color: white;
+      text-align: center;
+      border: 0 none;
+      cursor: pointer;
+      padding: 8px 16px;
+      background-color: #0bb5ff;
+      border-radius: 4px;
+      backface-visibility: none;
+      background-repeat: no-repeat;
+      background-size: 20px auto;
+      background-position: 80% center;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+        0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.3s ease-out;
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+          0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+  // en__submit
+  // fields
+  .en__field__element {
+    &.en__field__element--select,
+    &.en__field__element--text {
+      input,
+      select {
+        &:hover {
+          border: 1px solid #80c342;
+        }
+        &:focus {
+          border: 1px solid #80c342;
+        }
+        &.invalid {
+          border: 1px solid #ff6666;
+        }
+        &.valid {
+          border: 1px solid #80c342;
+        }
+      }
+    }
+  }
+}
+
+.enform {
+  .en__field--email-ok-hongkong {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    margin: 0;
+    padding: 0 4px;
+    z-index: 1;
+    .en__field__label {
+      display: none;
+    }
+    .en__field__item {
+      [type="checkbox"] {
+        &:checked,
+        &:not(:checked) {
+          position: absolute;
+          left: -9999px;
+        }
+        &:checked + label,
+        &:not(:checked) + label {
+          position: relative;
+          padding-left: 18px;
+          font-size: 10px;
+          color: #fff;
+          cursor: pointer;
+          display: inline-block;
+          font-weight: 300;
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            top: 1px;
+            width: 13px;
+            height: 13px;
+          }
+          &:before {
+            border: 1px solid #ddd;
+            background: #fff;
+          }
+          &:after {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAQAAABuW59YAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAB2SURBVHjaAGkAlv8A3QDyAP0A/QD+Dam3W+kCAAD8APYAAgTVZaZCGwwA5wr0AvcA+Dh+7UX/x24AqK3Wg/8nt6w4/5q71wAAVP9g/7rTXf9n/+9N+AAAtpJa/zf/S//DhP8H/wAA4gzWj2P4lsf0JP0A/wADAHB0Ngka6UmKAAAAAElFTkSuQmCC");
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: opacity 0.2s;
+            transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          }
+        }
+        &:not(:checked) + label:after {
+          opacity: 0;
+        }
+        &:checked + label:after {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+/* end of form field styles */
+
+/* error Message */
+
+.enform {
+  .en__errorList {
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+  }
+  .en__field__error {
+    font-size: 10px;
+    font-weight: 300;
+    color: #ff6666;
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+  }
+  .eaErrorMessage {
+    text-align: left;
+    padding-left: 8px;
+    margin: 8px 0;
+  }
+  .eaErrorMessageHeader {
+    outline: none;
+    display: none;
+  }
+  .eaErrorMessageList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+  .eaErrorMessageList > li {
+    color: #ff6666;
+  }
+  .eaErrorMessageList > li > a {
+    color: #ff6666;
+    text-decoration: none;
+    pointer-events: none;
+    cursor: text;
+  }
+}
+
+/* end of error message */
+
+/* form contact */
+
+.enform {
+  .en__component--contactblock {
+    display: none;
+    width: 100%;
+    padding: 3px;
+    background-color: #fff;
+    z-index: 1;
+  }
+}
+
+/* end of form contact */
+
+/* form plugins */
+
+.enform__close {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+  cursor: pointer;
+  display: block;
+  .material-icons {
+    font-size: 20px;
+  }
+  &:hover {
+    &:before,
+    &:after {
+      width: 4px;
+    }
+  }
+  &:before,
+  &:after {
+    display: none; // hidden
+    background: #fff;
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    transform: translate3d(0, 0, 0);
+    transform-origin: 50% 50%;
+    transition: 0.28s transform cubic-bezier(0.4, 0, 0.2, 1);
+    width: 3px;
+  }
+  &:before {
+    left: 14px;
+    transform: rotate(45deg);
+  }
+  &:after {
+    left: 14px;
+    transform: rotate(-45deg);
+  }
+}
+
+.enform__login {
+  margin-bottom: 1rem;
+  .form__social {
+    text-align: center;
+    .social-login {
+      font-size: 14px;
+      display: inline-block;
+      box-sizing: border-box;
+      position: relative;
+      margin-bottom: 8px;
+      padding: 0 40px 0 60px;
+      border: none;
+      text-align: left;
+      line-height: 32px;
+      white-space: nowrap;
+      border-radius: 4px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+    .social-login:before {
+      content: "";
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 34px;
+      height: 100%;
+    }
+    .social-login:focus {
+      outline: none;
+    }
+    .social-login:active {
+      box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+    }
+    /* Facebook */
+    .login__fb {
+      background-color: #4c69ba;
+      background-image: linear-gradient(#4c69ba, #3b55a0);
+      text-shadow: 0 -1px 0 #354c8c;
+    }
+    .login__fb:before {
+      border-right: #364e92 1px solid;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMinYMin meet' viewBox='0 0 262 266.895'><path id='path3087' fill='%23fff' d='M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935 l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585 v99.803H182.409z'></path></svg>");
+      background-size: 22px;
+      background-position: 3px 2px;
+      background-repeat: no-repeat;
+    }
+    .login__fb:hover,
+    .login__fb:focus {
+      background-color: #5b7bd5;
+      background-image: linear-gradient(#5b7bd5, #4864b1);
+    }
+  }
+  .form__or {
+    position: relative;
+    height: 16px;
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 1px;
+      background-color: #ddd;
+    }
+    &:before {
+      left: 0;
+      top: 50%;
+    }
+    &:after {
+      right: 0;
+      top: 50%;
+    }
+    span {
+      text-align: center;
+      font-size: 13px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+/* end of form plugins */

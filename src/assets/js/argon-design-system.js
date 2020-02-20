@@ -1,11 +1,11 @@
 /*!
 
  =========================================================
- * Argon Design System Pro - v1.0.0
+ * Argon Design System Pro - v1.0.2
  =========================================================
 
  * Product Page: https://www.creative-tim.com/product/argon-design-system-pro
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+ * Copyright 2020 Creative Tim (http://www.creative-tim.com)
 
  * Coded by www.creative-tim.com
 
