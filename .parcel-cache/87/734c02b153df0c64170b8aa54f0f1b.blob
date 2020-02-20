@@ -1,7 +1,0 @@
-"use strict";
-
-require("./main.scss");
-
-$(function () {
-  $('input[name="supporter.emailAddress"]').addClass("");
-});

@@ -1,5 +1,6 @@
 import "sanitize.css/sanitize.css";
 import "./main.scss";
+//
 import $ from "jquery";
 import Mailcheck from "mailcheck";
 import * as yup from "yup";
@@ -50,16 +51,17 @@ $(function() {
     }
   });
   const validationSchema = yup.object({
-    email: yup.string().email()
+    email: yup
+      .string()
+      .email()
+      .required()
   });
   const customFormHandle = function() {
-    let isValid = false;
     validationSchema.isValid({ email: email.value }).then(function(valid) {
+      console.log(valid);
       if (valid) {
         document.querySelector('input[name="supporter.emailAddress"]').value =
           email.value;
-        // enFormSubmit();
-        console.log("submit");
       }
     });
   };

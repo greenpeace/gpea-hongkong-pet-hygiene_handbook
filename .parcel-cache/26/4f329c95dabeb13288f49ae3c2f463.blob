@@ -1,7 +1,0 @@
-.enform__wrapper {
-  display: none;
-}
-
-.page-header-image {
-  background-color: #6c0;
-}

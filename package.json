@@ -7,29 +7,15 @@
     "build": "parcel build ./src/index.html",
     "serve": "parcel serve ./src/index.html"
   },
+  "default": "dist/index.html",
   "devDependencies": {
-    "parcel": "^2.0.0-alpha.3.2",
+    "parcel": "latest",
     "sass": "^1.25.0"
   },
   "dependencies": {
-    "autoprefixer": "^9.7.4",
     "jquery": "^3.4.1",
     "mailcheck": "^1.1.1",
     "sanitize.css": "^11.0.0",
     "yup": "^0.28.1"
-  },
-  "postcss": {
-    "modules": false,
-    "plugins": {
-      "autoprefixer": {
-        "browsers": [
-          ">1%",
-          "last 4 versions",
-          "Firefox ESR",
-          "not ie < 9"
-        ],
-        "flexbox": "no-2009"
-      }
-    }
   }
 }
