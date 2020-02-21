@@ -6,30 +6,33 @@ import Mailcheck from "mailcheck";
 import * as yup from "yup";
 //
 $(function() {
-  $(".en__field--emailAddress").append(
-    `<span class="mailcheck-message"></span>`
-  );
-  $(".en__field--lastName").hide();
-  $(".en__field--firstName").hide();
-  $(".en__submit button").addClass("btn btn-block btn-round btn--download");
+  const init = function() {
+    $(".en__field--emailAddress").append(
+      `<span class="mailcheck-message"></span>`
+    );
+    $(".en__field--lastName").hide();
+    $(".en__field--firstName").hide();
+    $(".en__submit button").addClass("btn btn-block btn-round btn--download");
+  };
+  init();
+  //
   const email = document.querySelector('input[name="supporter.emailAddress"]');
   const mailcheckMessage = document.querySelector(".mailcheck-message");
-  //
-  let domains = [
-    "me.com",
-    "outlook.com",
-    "netvigator.com",
-    "cloud.com",
-    "live.hk",
-    "msn.com",
-    "gmail.com",
-    "hotmail.com",
-    "ymail.com",
-    "yahoo.com",
-    "yahoo.com.tw",
-    "yahoo.com.hk"
-  ];
-  email.addEventListener("blur", function() {
+  const mailcheck = function() {
+    let domains = [
+      "me.com",
+      "outlook.com",
+      "netvigator.com",
+      "cloud.com",
+      "live.hk",
+      "msn.com",
+      "gmail.com",
+      "hotmail.com",
+      "ymail.com",
+      "yahoo.com",
+      "yahoo.com.tw",
+      "yahoo.com.hk"
+    ];
     Mailcheck.run({
       email: email.value,
       domains: domains, // optional
@@ -41,7 +44,8 @@ $(function() {
         // callback code
       }
     });
-  });
+  };
+  email.addEventListener("blur", mailcheck());
   mailcheckMessage.addEventListener("click", function() {
     const emailSuggestion = document.querySelector(".email-suggestion")
       .innerText;
@@ -56,16 +60,18 @@ $(function() {
       .email()
       .required()
   });
+  //
   const enformButton = document.querySelector(".en__submit");
   enformButton.addEventListener("click", function(event) {
     event.preventDefault();
+    const enform = document.querySelector("form.en__component");
     let isValid = validationSchema.isValid({ email: email.value });
     isValid.then(valid => {
       if (valid) {
         mailcheckMessage.innerText = "";
-        document.querySelector("form.en__component").submit();
+        enform.submit();
       } else {
-        mailcheckMessage.innerText = "請檢查您的電郵地址";
+        mailcheckMessage.innerText = "電郵地址格式錯誤";
       }
     });
   });

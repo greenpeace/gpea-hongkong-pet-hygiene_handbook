@@ -1,5 +1,6 @@
 dist
 node_modules
+.enuploader
 .cache
 .parcel-cache
 *.log
