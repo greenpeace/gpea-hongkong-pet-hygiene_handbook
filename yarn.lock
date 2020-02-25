@@ -1301,9 +1301,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001027:
-  version "1.0.30001028"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001028.tgz#f2241242ac70e0fa9cda55c2776d32a0867971c2"
-  integrity sha512-Vnrq+XMSHpT7E+LWoIYhs3Sne8h9lx9YJV3acH3THNCwU/9zV93/ta4xVfzTtnqd3rvnuVpVjE3DFqf56tr3aQ==
+  version "1.0.30001029"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001029.tgz#249fa16983413c0e9d77ae052e28a733fcb9f334"
+  integrity sha512-anyTt5lJAF0IyHfyjZGY23u29QeLkVElCe5rYefLc0n6YoYvDiwpGj3PATtRrkRDc6rQoe7qIZ7z9rJRCaTzGg==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -2395,7 +2395,7 @@ globals@^11.1.0:
 
 gpea-npm-en-uploader@greenpeace/gpea-npm-en-uploader:
   version "1.0.0"
-  resolved "https://codeload.github.com/greenpeace/gpea-npm-en-uploader/tar.gz/155dc9ad41a031943a925eb3491c17e0cb660b13"
+  resolved "https://codeload.github.com/greenpeace/gpea-npm-en-uploader/tar.gz/183ebfa90eb93ca8712ec17959ebca978afbe289"
   dependencies:
     ftps "^1.1.1"
     selenium-webdriver "3"

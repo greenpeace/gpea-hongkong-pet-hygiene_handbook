@@ -8,14 +8,14 @@
     "build": "parcel build ./src/index.html --out-dir build/",
     "build:en": "parcel build ./src/index.html --out-dir build/ --public-url https://api.greenpeace.org.hk/2020/hygiene_handbook/",
     "serve": "parcel serve ./src/index.html",
-    "deploy": "yarn run prebuild build:en && gpea-npm-en-uploader"
+    "deploy": "yarn run prebuild && yarn run build:en && gpea-npm-en-uploader"
   },
   "devDependencies": {
-    "gpea-npm-en-uploader": "greenpeace/gpea-npm-en-uploader",
     "parcel": "latest",
     "sass": "^1.25.0"
   },
   "dependencies": {
+    "gpea-npm-en-uploader": "greenpeace/gpea-npm-en-uploader",
     "jquery": "^3.4.1",
     "mailcheck": "^1.1.1",
     "sanitize.css": "^11.0.0",

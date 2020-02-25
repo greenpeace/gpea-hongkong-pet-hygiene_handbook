@@ -87,10 +87,33 @@ $(function() {
   const whatsapp = document.querySelector(".btn-whatsapp");
   const facebook = document.querySelector(".btn-facebook");
   const instagram = document.querySelector(".btn-instagram");
-  const fbShare = () => {
+  const share = document.querySelector(".btn-share");
+  whatsapp.addEventListener("click", () => {
+    whatsappShare();
+  });
+  facebook.addEventListener("click", () => {
+    fbShare();
+  });
+  share.addEventListener("click", () => {
+    mainShare();
+  });
+  const whatsappShare = function() {
+    console.log("whatsappShare");
+    //set up the url
+    var url =
+      "whatsapp://send?text=綠色和平特別為大家制訂一本防疫手冊，內容包括《家居與出門的防疫篇》、《自製防疫用品篇》和《起居飲食篇》等，為您提供一系列綠色小貼士，讓大家抗疫之餘，亦盡力減低對地球環境的負荷！即刻睇 ";
+    //define the message text
+    var text = "https://act.gp/3c4FU1H";
+    //encode the text
+    var encodedText = encodeURIComponent(text);
+    //set the href attribute on the link
+    window.open(url + encodedText);
+  };
+  const fbShare = function() {
+    console.log("fbShare");
     var baseURL = "https://www.facebook.com/sharer/sharer.php";
     var u =
-      "https://act.greenpeace.org/page/56266/petition/1?utm_campaign=general&utm_source=facebook&utm_medium=social&utm_content=thankyou_page";
+      "https://act.greenpeace.org/page/56266/petition/1?utm_campaign=general&utm_source=facebook&utm_medium=social&utm_content=card-share";
     var t = (window.innerHeight - 436) / 2;
     var l = (window.innerWidth - 626) / 2;
     window.open(
@@ -99,15 +122,18 @@ $(function() {
       "width=626,height=436,top=" + t + ",left=" + l
     );
   };
-  const mainShare = () => {
+  const mainShare = function(e) {
+    console.log(e);
+    console.log("mainShare");
     // WEB SHARE API
     if (navigator.share) {
       // we can use web share!
       navigator
         .share({
           title: "",
-          text: "",
-          url: "https://act.gp/2T27O5N"
+          text:
+            "綠色和平特別為大家制訂一本防疫手冊，內容包括《家居與出門的防疫篇》、《自製防疫用品篇》和《起居飲食篇》等，為您提供一系列綠色小貼士，讓大家抗疫之餘，亦盡力減低對地球環境的負荷！即刻睇",
+          url: "https://act.gp/2TbekHI"
         })
         .then(() => console.log("Successfully shared"))
         .catch(error => console.log("Error sharing:", error));
