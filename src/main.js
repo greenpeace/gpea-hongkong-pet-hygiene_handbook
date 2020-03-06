@@ -20,6 +20,7 @@ $(function() {
   //
   const email = document.querySelector('input[name="supporter.emailAddress"]');
   const mailcheckMessage = document.querySelector(".mailcheck-message");
+  let mailIsCorrect = false;
   const mailcheck = function() {
     let domains = [
       "me.com",
@@ -35,15 +36,20 @@ $(function() {
       "yahoo.com.tw",
       "yahoo.com.hk"
     ];
+    let topLevelDomains = ["com", "net", "org", "edu", "gov", "hk", "tw"];
     Mailcheck.run({
       email: email.value,
-      domains: domains, // optional
+      domains: domains,
+      topLevelDomains: topLevelDomains,
       suggested: function(suggestion) {
         // callback code
         mailcheckMessage.innerHTML = `您要輸入的是 <span class="email-suggestion">${suggestion.full}</span> 嗎？`;
+        mailIsCorrect = false;
       },
       empty: function() {
         // callback code
+        mailcheckMessage.innerText = ""; // clean the suggestion
+        mailIsCorrect = true;
       }
     });
   };
@@ -53,7 +59,7 @@ $(function() {
       .email()
       .required()
   });
-  if (email && mailcheckMessage) {
+  if (mailcheckMessage) {
     mailcheckMessage.addEventListener("click", function() {
       const emailSuggestion = document.querySelector(".email-suggestion")
         .innerText;
@@ -62,7 +68,9 @@ $(function() {
         this.innerText = "";
       }
     });
-    email.addEventListener("blur", mailcheck());
+  }
+  if (email) {
+    email.addEventListener("blur", mailcheck);
   }
   //
   const enformButton = document.querySelector(".en__submit");
@@ -73,8 +81,9 @@ $(function() {
       let isValid = validationSchema.isValid({
         email: email.value
       });
+      mailcheck();
       isValid.then(valid => {
-        if (valid) {
+        if (valid && mailIsCorrect) {
           mailcheckMessage.innerText = "";
           enform.submit();
         } else {
