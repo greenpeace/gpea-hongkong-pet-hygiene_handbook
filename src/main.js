@@ -1,14 +1,12 @@
 "use strict";
-import "sanitize.css/sanitize.css";
-import "./main.scss";
 import $ from "jquery";
 import SmoothScroll from "smooth-scroll";
 import Mailcheck from "mailcheck";
 import * as yup from "yup";
-$(function() {
+$(function () {
   var scroll = new SmoothScroll('a[href*="#"]');
   //
-  const enformInit = function() {
+  const enformInit = function () {
     $(".en__field--emailAddress").append(
       `<span class="mailcheck-message"></span>`
     );
@@ -21,7 +19,7 @@ $(function() {
   const email = document.querySelector('input[name="supporter.emailAddress"]');
   const mailcheckMessage = document.querySelector(".mailcheck-message");
   let mailIsCorrect = false;
-  const mailcheck = function() {
+  const mailcheck = function () {
     let domains = [
       "me.com",
       "outlook.com",
@@ -34,33 +32,30 @@ $(function() {
       "ymail.com",
       "yahoo.com",
       "yahoo.com.tw",
-      "yahoo.com.hk"
+      "yahoo.com.hk",
     ];
     let topLevelDomains = ["com", "net", "org", "edu", "gov", "hk", "tw"];
     Mailcheck.run({
       email: email.value,
       domains: domains,
       topLevelDomains: topLevelDomains,
-      suggested: function(suggestion) {
+      suggested: function (suggestion) {
         // callback code
         mailcheckMessage.innerHTML = `您要輸入的是 <span class="email-suggestion">${suggestion.full}</span> 嗎？`;
         mailIsCorrect = false;
       },
-      empty: function() {
+      empty: function () {
         // callback code
         mailcheckMessage.innerText = ""; // clean the suggestion
         mailIsCorrect = true;
-      }
+      },
     });
   };
   const validationSchema = yup.object({
-    email: yup
-      .string()
-      .email()
-      .required()
+    email: yup.string().email().required(),
   });
   if (mailcheckMessage) {
-    mailcheckMessage.addEventListener("click", function() {
+    mailcheckMessage.addEventListener("click", function () {
       const emailSuggestion = document.querySelector(".email-suggestion")
         .innerText;
       if (emailSuggestion) {
@@ -75,14 +70,14 @@ $(function() {
   //
   const enformButton = document.querySelector(".en__submit");
   if (enformButton) {
-    enformButton.addEventListener("click", function(event) {
+    enformButton.addEventListener("click", function (event) {
       event.preventDefault();
       const enform = document.querySelector("form.en__component");
       let isValid = validationSchema.isValid({
-        email: email.value
+        email: email.value,
       });
       mailcheck();
-      isValid.then(valid => {
+      isValid.then((valid) => {
         if (valid && mailIsCorrect) {
           mailcheckMessage.innerText = "";
           enform.submit();
@@ -106,7 +101,7 @@ $(function() {
   share.addEventListener("click", () => {
     mainShare();
   });
-  const whatsappShare = function() {
+  const whatsappShare = function () {
     console.log("whatsappShare");
     //set up the url
     var url =
@@ -118,7 +113,7 @@ $(function() {
     //set the href attribute on the link
     window.open(url + encodedText);
   };
-  const fbShare = function() {
+  const fbShare = function () {
     console.log("fbShare");
     var baseURL = "https://www.facebook.com/sharer/sharer.php";
     var u =
@@ -131,7 +126,7 @@ $(function() {
       "width=626,height=436,top=" + t + ",left=" + l
     );
   };
-  const mainShare = function(e) {
+  const mainShare = function (e) {
     console.log(e);
     console.log("mainShare");
     // WEB SHARE API
@@ -142,10 +137,10 @@ $(function() {
           title: "",
           text:
             "綠色和平特別為大家制訂一本防疫手冊，內容包括《家居與出門的防疫篇》、《自製防疫用品篇》和《起居飲食篇》等，為您提供一系列綠色小貼士，讓大家抗疫之餘，亦盡力減低對地球環境的負荷！即刻睇",
-          url: "https://act.gp/2TbekHI"
+          url: "https://act.gp/2TbekHI",
         })
         .then(() => console.log("Successfully shared"))
-        .catch(error => console.log("Error sharing:", error));
+        .catch((error) => console.log("Error sharing:", error));
     } else {
       fbShare();
     }
