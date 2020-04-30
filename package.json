@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "gpea-npm-en-uploader": "greenpeace/gpea-npm-en-uploader",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "mailcheck": "^1.1.1",
     "sanitize.css": "^11.0.0",
     "smooth-scroll": "^16.1.2",
